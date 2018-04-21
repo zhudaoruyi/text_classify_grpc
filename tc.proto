@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message Data {
+    string value = 1;
+}
+
+message Reply {
+    string value = 1;
+}
+
+service GetClassifier {
+    rpc TextClassify(Data) returns (Reply) {}
+}
