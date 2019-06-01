@@ -35,7 +35,5 @@ for txt_file in txt_files:
     txt_type = classifier.classify(txt_content)
     if txt_type != type_c:
         wrong_nums += 1
-        print "file {} is {} type, but has been classified to {}".format(txt_file.split('/')[-1], type_c, txt_type)
-print "folder {} has {} files, wrong classified {} files".format(type_c, len(txt_files), wrong_nums)
-
-
+        print("file {} is {} type, but has been classified to {}".format(txt_file.split('/')[-1], type_c, txt_type))
+print("folder {} has {} files, wrong classified {} files".format(type_c, len(txt_files), wrong_nums))
